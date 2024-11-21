@@ -29,10 +29,11 @@ app.service("yogyakartaService", function () {
   // Fungsi untuk mendapatkan data aktivitas hari pertama (Day 1)
   this.getDay1yogyakartaActivities = function () {
     return {
-      pagi: "Anda akan berangkat menuju yogyakarta. Jika Anda terbang dari Jakarta, perjalanan dengan pesawat akan memakan waktu sekitar 1,5 jam. Setibanya di Bandara Ngurah Rai, Denpasar, Anda akan dijemput dan menuju penginapan di kawasan Kuta atau Seminyak untuk check-in. Check-in di hotel atau villa untuk menaruh barang dan beristirahat sejenak. Setelah check-in, Anda bisa memulai liburan dengan berkunjung ke Pantai Kuta. Anda bisa bersantai di tepi pantai atau mencoba olahraga air seperti surfing.",
+      pagi: 
+        "Pukul 07.00 - 09.00: Anda akan memulai perjalanan menuju Yogyakarta. Jika berangkat dari Jakarta, perjalanan bisa ditempuh dengan pesawat atau kereta, memakan waktu sekitar 1-2 jam. Setibanya di Yogyakarta, Anda akan melakukan check-in di hotel atau penginapan yang terletak di kawasan Malioboro atau Prawirotaman. Setelah check-in, Anda akan mengunjungi Keraton Yogyakarta, tempat tinggal Sultan dan pusat kebudayaan Yogyakarta. Di sini, Anda dapat menyaksikan berbagai koleksi seni dan budaya.",
       siang:
-        "Makan siang di Beachwalk Shopping Center, yang menyediakan berbagai restoran dengan pemandangan laut. Setelah makan siang, Anda dapat menuju Pantai Seminyak yang terkenal dengan suasana tenang dan lebih sepi dibanding Pantai Kuta. Nikmati suasana santai atau berjalan-jalan di tepi pantai.",
-      sore: "Sore hari, Anda akan mengunjungi Pura Petitenget di dekat Pantai Seminyak untuk menyaksikan keindahan pura yogyakarta dan merasakan nuansa spiritual. Nikmati pemandangan sunset di La Plancha Beach Bar, sebuah kafe tepi pantai berwarna-warni di Seminyak dengan bean bag di pasir.",
+        "Saatnya makan siang di Kedai Taman, yang terkenal dengan menu masakan Jawa yang lezat dan suasana yang nyaman. Setelah makan siang, Anda akan melanjutkan perjalanan ke Taman Sari, yang merupakan bekas taman kerajaan yang indah dan sarat sejarah.",
+      sore: " Anda kemudian akan berkunjung ke Pasar Beringharjo, pasar tradisional yang menawarkan berbagai oleh-oleh dan kerajinan lokal. Anda bisa berbelanja batik dan cendera mata lainnya.",
       malam:
         "Makan malam di Ku De Ta, restoran tepi pantai terkenal di Seminyak yang menawarkan pengalaman makan malam yang elegan dan pemandangan laut. Setelah makan malam, Anda kemyogyakarta ke hotel untuk beristirahat dan bersiap untuk hari kedua.",
     };
