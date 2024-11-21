@@ -6,20 +6,52 @@
   transition: none !important;
 } */
 /* tabs */
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+}
+
 .card .badge {
+  position: fixed;
   font-size: 14px;
   font-weight: bold;
-  border-radius: 50px;
-  padding: 5px 10px;
+  border-radius: 60px;
+  padding: 10px 20px;
 }
 
 .card-title {
   font-size: 18px;
   font-weight: bold;
+  margin: 15px 0 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
 }
 
 .btn-primary {
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
