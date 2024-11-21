@@ -63,7 +63,7 @@ app.service("baliService", function () {
         title: "Tiket Pesawat",
         image: "app/img/Pesawat.jpg",
         link: "https://www.traveloka.com/id-id/flight/to/Bali-Denpasar.DPS",
-        description: "Pesan tiket untuk perjalanan Anda ke Bali."
+        description: "Pesan tiket untuk perjalanan Anda ke Bali bersama Keluarga."
       },
       {
         title: "Hotel ZIA Bali-Kuta",
@@ -80,7 +80,7 @@ app.service("baliService", function () {
         title: "Tiket Pesawat",
         image: "app/img/Monkey_Forest.jpg",
         link: "https://www.traveloka.com/id-id/flight/to/Bali-Denpasar.DPS",
-        description: "Pesan tiket untuk perjalanan Anda ke Bali."
+        description: "Pesan tiket untuk perjalanan Anda ke Bali bersama Keluarga."
       },
       {
         title: "Hotel ZIA Bali-Kuta",
@@ -97,7 +97,7 @@ app.service("baliService", function () {
         title: "Tiket Pesawat",
         image: "app/img/Pesawat.jpg",
         link: "https://www.traveloka.com/id-id/flight/to/Bali-Denpasar.DPS",
-        description: "Pesan tiket untuk perjalanan Anda ke Bali."
+        description: "Pesan tiket untuk perjalanan Anda ke Bali bersama Keluarga."
       },
       {
         title: "Hotel ZIA Bali-Kuta",
