@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="/Style/itinerary.css">
+    <!-- Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #D4F6FF;">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-auto" href="#">LuxeVoyage</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Destinasi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Itinerary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <a class="navbar-brand" href="/app/view/profil.html"><button type="button" class="btn btn-primary">Profil</button>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <section id="Recomended-itinerary">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/img/bandung-bumipasundan.jpg" class="d-block w-100" alt="Slide 1">
+              <div class="carousel-caption bg-dark text-white p-2 p-md-3 rounded shadow-lg" style="opacity: 0.8;">
+                <div class="container">
+                <h3>Bandung, JPO di Jalan Asia Afrika</h3>
+                <p>landmark baru Bandung, memadukan arsitektur modern dan sejarah, spot fotografi populer dengan pemandangan indah, serta meningkatkan mobilitas pejalan kaki dan pariwisata.</p>
+              </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/img/Jogja-prambanan.jpg" class="d-block w-100" alt="Slide 2">
+              <div class="carousel-caption bg-dark text-white p-2 p-md-3 rounded shadow-lg" style="opacity: 0.8;">
+                <h3>Yogyakarta, Candi Prambanan</h3>
+                <p>kompleks candi Hindu yang megah di Yogyakarta. Dikenal karena keindahan arsitekturnya dan ukiran relief epik Ramayana, tempat ini menawarkan pengalaman sejarah dan budaya yang mendalam bagi wisatawan.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/img/monas.jpg" class="d-block w-100" alt="Slide 3">
+              <div class="carousel-caption bg-dark text-white p-2 p-md-3 rounded shadow-lg" style="opacity: 0.8;">
+                <h3>Jakarta, Monumen Nasional</h3>
+                <p>di Jakarta, terkenal dengan tugu emasnya, pemandangan kota yang menakjubkan, dan sejarah kemerdekaan yang legendaris. Cocok untuk wisata edukasi dan fotografi.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/img\RajaAmpat-Kepulauan Pianemo.jpg" class="d-block w-100" alt="Slide 4">
+              <div class="carousel-caption bg-dark text-white p-2 p-md-3 rounded shadow-lg" style="opacity: 0.8;">
+                <h3>Raja Ampat, Kepulauan Pianemo</h3>
+                <p> Kabupaten Raja Ampat juga memiliki gugusan bukit karst yang tak kalah menarik. Bukit Pianemo Terletak di Groot Fam, Saukabu, Kepulauan Waigeo Barat, Bukit Pianemo menawarkan keindahan yang luar biasa. </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/img/ubud.jpg" class="d-block w-100" alt="Slide 5">
+              <div class="carousel-caption bg-dark text-white p-2 p-md-3 rounded shadow-lg" style="opacity: 0.8;">
+                <h3>Bali, Pura Taman Saraswati</h3>
+                <p>Pura Taman Saraswati di Ubud, Bali, merupakan pura cantik yang dikelilingi kolam teratai indah. Didedikasikan untuk Dewi Saraswati, pura ini terkenal akan arsitektur Bali yang megah.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <div class="container mt-5">
+            <h1 class="mb-4">Recomended Itinerary</h1>
+            
+            <!-- Tabs for Locations -->
+            <ul class="nav nav-tabs mb-3" id="locationTabs" role="tablist" style="border: none;">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="bali-tab" data-bs-toggle="tab" data-bs-target="#bali" type="button" role="tab" aria-controls="bali" aria-selected="true">Bali</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bandung-tab" data-bs-toggle="tab" data-bs-target="#bandung" type="button" role="tab" aria-controls="bandung" aria-selected="false">Bandung</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="RajaAmpat-tab" data-bs-toggle="tab" data-bs-target="#RajaAmpat" type="button" role="tab" aria-controls="RajaAmpat" aria-selected="false">RajaAmpat Ampat</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Yogyakarta-tab" data-bs-toggle="tab" data-bs-target="#Yogyakarta" type="button" role="tab" aria-controls="Yogyakarta" aria-selected="false">Yogyakarta</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="jakarta-tab" data-bs-toggle="tab" data-bs-target="#jakarta" type="button" role="tab" aria-controls="jakarta" aria-selected="false">Jakarta</button>
+              </li>
+            </ul>
+        
+            <div class="tab-content" id="locationTabContent">
+              <!-- Bali Tab Content -->
+              <div class="tab-pane fade show active" id="bali" role="tabpanel" aria-labelledby="bali-tab">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3>3 Hari di Bali</h3>
+                  <button class="btn btn-sm love-btn">
+                    <i class="ri-heart-line"></i>
+                  </button>
+                </div>
+                <!-- Nested Tabs for Days -->
+                <ul class="nav nav-pills mb-3" id="dayTabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="day1-tab" data-bs-toggle="tab" data-bs-target="#day1" type="button" role="tab" aria-controls="day1" aria-selected="true">Day 1</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="day2-tab" data-bs-toggle="tab" data-bs-target="#day2" type="button" role="tab" aria-controls="day2" aria-selected="false">Day 2</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="day3-tab" data-bs-toggle="tab" data-bs-target="#day3" type="button" role="tab" aria-controls="day3" aria-selected="false">Day 3</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="dayTabContent">
+                  <div class="tab-pane fade show active" id="day1" role="tabpanel" aria-labelledby="day1-tab">
+                    <h4>Kedatangan dan Wisata Pantai</h4>
+                    <h5>Pagi</h5>
+                    <p>Anda akan berangkat menuju Bali. Jika Anda terbang dari Jakarta, perjalanan dengan pesawat akan memakan waktu sekitar 1,5 jam. Setibanya di Bandara Ngurah Rai, Denpasar,
+                    Anda akan dijemput dan menuju penginapan di kawasan Kuta atau Seminyak untuk check-in. Check-in di hotel atau villa untuk menaruh barang dan beristirahat sejenak. Setelah check-in, Anda bisa memulai liburan dengan berkunjung ke Pantai Kuta. Anda bisa bersantai di tepi pantai atau mencoba olahraga air seperti surfing.</p>
+                    <h5>Siang</h5>
+                    <p>Makan siang di Beachwalk Shopping Center, yang menyediakan berbagai restoran dengan pemandangan laut. Setelah makan siang, Anda dapat menuju Pantai Seminyak yang terkenal dengan suasana tenang dan lebih sepi dibanding Pantai Kuta. Nikmati suasana santai atau berjalan-jalan di tepi pantai.</p>
+                    <h5>Sore</h5>
+                    <p>Sore hari, Anda akan mengunjungi Pura Petitenget di dekat Pantai Seminyak untuk menyaksikan keindahan pura Bali dan merasakan nuansa spiritual. Nikmati pemandangan sunset di La Plancha Beach Bar, sebuah kafe tepi pantai berwarna-warni di Seminyak dengan bean bag di pasir</p>
+                    <h5>Malam</h5>
+                    <p>Makan malam di Ku De Ta, restoran tepi pantai terkenal di Seminyak yang menawarkan pengalaman makan malam yang elegan dan pemandangan laut. Setelah makan malam, Anda kembali ke hotel untuk beristirahat dan bersiap untuk hari kedua.</p>
+                    </div>
+                <div class="tab-pane fade" id="day2" role="tabpanel" aria-labelledby="day2-tab">
+                    <h4>Wisata Alam dan Budaya Ubud</h4>
+                    <h5>Pagi</h5>
+                    <p>Sarapan di hotel untuk memulai hari dengan energi yang cukup.
+                        Berangkat dari Seminyak menuju Ubud, perjalanan sekitar 1,5 jam. Setibanya di Ubud, Anda akan langsung menuju Monkey Forest, tempat suci yang juga merupakan rumah bagi ratusan monyet ekor panjang.
+                        Setelah itu, Anda akan berkunjung ke Pura Saraswati di tengah Ubud yang terkenal dengan kolam teratainya yang indah. Ini juga merupakan tempat sempurna untuk berfoto.</p>
+                    <h5>Siang</h5>
+                    <p>Makan siang di Bebek Bengil yang terkenal dengan menu bebek goreng khas Bali sambil menikmati suasana persawahan.
+                        Setelah makan siang, Anda akan melanjutkan perjalanan ke Tegalalang Rice Terrace, salah satu destinasi ikonik di Ubud yang menawarkan pemandangan sawah bertingkat yang menakjubkan.
+                        Menikmati sunset di Campuhan Ridge Walk, sebuah jalur trekking yang terkenal di Ubud dengan pemandangan bukit hijau dan alam yang menakjubkan.</p>
+                    <h5>Sore</h5>
+                    <p>Di sore hari, Anda akan mengunjungi Goa Gajah (Gua Gajah), sebuah situs arkeologi kuno yang memiliki sejarah dan keindahan arsitektur yang menawan.</p>
+                    <h5>Malam</h5>
+                    <p>Makan malam di Locavore, restoran dengan konsep fine dining yang menyajikan masakan berbahan lokal dengan cita rasa modern (pastikan untuk reservasi terlebih dahulu karena tempat ini cukup populer).
+                    Setelah makan malam, kembali ke hotel untuk beristirahat.</p>
+                  </div>
+                <div class="tab-pane fade" id="day3" role="tabpanel" aria-labelledby="day3-tab">
+                    <h4>Wisata Santai dan Kembali</h4>
+                    <h5>Pagi</h5>
+                    <p>Sarapan di hotel dan melakukan check-out.
+                        Anda akan menuju ke Pasar Seni Sukawati untuk berbelanja oleh-oleh khas Bali seperti kerajinan tangan, kain, dan barang-barang unik lainnya.
+                        Setelah itu, Anda bisa mengunjungi Tegenungan Waterfall, air terjun yang indah di sekitar Ubud. Anda bisa berenang atau sekadar menikmati pemandangan alam.</p>
+                    <h5>Siang</h5>
+                    <p>Makan siang di Beachwalk Shopping Center, yang menyediakan berbagai restoran dengan pemandangan laut. Setelah makan siang, Anda dapat menuju Pantai Seminyak yang terkenal dengan suasana tenang dan lebih sepi dibanding Pantai Kuta. Nikmati suasana santai atau berjalan-jalan di tepi pantai.</p>
+                    <h5>Sore</h5>
+                    <p>Makan siang di Cafe Wayan di Ubud, yang menyajikan masakan tradisional Bali dengan suasana yang tenang.
+                        Setelah makan siang, Anda akan memiliki waktu bebas untuk berbelanja di Krisna Oleh-Oleh yang terkenal dengan berbagai macam oleh-oleh khas Bali.
+                        Menuju Bandara Ngurah Rai untuk penerbangan kembali ke kota asal.</p>
+                    </div>
+                </div>
+              </div>
+              <!-- Bandung Tab Content -->
+              <div class="tab-pane fade" id="bandung" role="tabpanel" aria-labelledby="bandung-tab">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3>3 Hari di Bandung</h3>
+                    <button class="btn btn-outline-secondary btn-sm love-btn">
+                        <i class="ri-heart-line"></i>
+                    </button>
+                </div>
+                <ul class="nav nav-pills mb-3" id="bandungDayTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="bandung-day1-tab" data-bs-toggle="tab" data-bs-target="#bandung-day1" type="button" role="tab" aria-controls="bandung-day1" aria-selected="true">Day 1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="bandung-day2-tab" data-bs-toggle="tab" data-bs-target="#bandung-day2" type="button" role="tab" aria-controls="bandung-day2" aria-selected="false">Day 2</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="bandung-day3-tab" data-bs-toggle="tab" data-bs-target="#bandung-day3" type="button" role="tab" aria-controls="bandung-day3" aria-selected="false">Day 3</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="bandungDayTabContent">
+                    <div class="tab-pane fade show active" id="bandung-day1" role="tabpanel" aria-labelledby="bandung-day1-tab">
+                        <h4>Kedatangan dan Wisata Alam</h4>
+                    <h5>Pagi</h5>
+                    <p>Di pagi hari, Anda akan berangkat dari kota asal menuju Bandung. Jika berangkat dari Jakarta, perjalanan ini memakan waktu sekitar 2-3 jam, tergantung kondisi lalu lintas.
+                    Setibanya di Bandung, Anda akan langsung menuju hotel atau penginapan yang terletak di kawasan Dago atau Lembang untuk melakukan check-in dan meletakkan barang-barang.
+                    Setelah check-in, Anda akan menikmati makan siang di Cafe D’Pakar, yang terkenal dengan pemandangan alamnya yang indah dan suasana tenang.</p>
+                    <h5>Siang</h5>
+                    <p> Setelah makan siang, Anda akan melanjutkan perjalanan ke Taman Hutan Raya Ir. H. Djuanda, di mana Anda bisa menjelajahi area hutan yang asri serta mengunjungi Gua Jepang dan Gua Belanda.
+                        Di sore hari, Anda akan menuju Tebing Keraton, salah satu tempat wisata populer di Bandung untuk menikmati pemandangan kota dan alam sekitar dari ketinggian.</p>
+                    <h5>Sore</h5>
+                    <p>Sore hari Anda akan dihabiskan di Dago Dreampark, sebuah tempat wisata keluarga dengan berbagai wahana menarik yang bisa Anda nikmati sambil berfoto di spot-spot keren.</p>
+                    <h5>Malam</h5>
+                    <p>Saat malam tiba, Anda akan menikmati makan malam di The Valley Bistro Cafe, yang menawarkan pemandangan indah kota Bandung di malam hari sambil menikmati hidangan lezat.
+                        Setelah makan malam, Anda akan kembali ke hotel untuk beristirahat dan mempersiapkan diri untuk petualangan hari kedua di Bandung.</p>
+                    </div>
+                    <div class="tab-pane fade" id="bandung-day2" role="tabpanel" aria-labelledby="bandung-day2-tab">
+                    <h4>Wisata Alam & Kuliner Lembang</h4>
+                    <h5>Pagi</h5>
+                    <p>Pagi hari kedua dimulai dengan sarapan di hotel, agar Anda memiliki cukup energi untuk aktivitas seharian.
+                        Setelah sarapan, Anda akan menuju Farmhouse Lembang untuk menikmati suasana ala Eropa yang penuh dengan spot foto yang Instagramable.
+                        Anda kemudian akan melanjutkan perjalanan ke The Lodge Maribaya, di mana Anda dapat mencoba berbagai wahana outdoor seperti zip bike dan sky swing, atau sekadar menikmati udara segar di kawasan pegunungan.</p>
+                    <h5>Siang</h5>
+                    <p>Saat siang tiba, Anda akan menikmati makan siang di Dusun Bambu, sebuah restoran di area wisata dengan suasana alam yang tenang dan asri.
+                        Setelah makan siang, Anda bisa menjelajahi area Dusun Bambu, berjalan santai menikmati keindahan taman, dan menikmati suasana alam yang sejuk.</p>
+                    <h5>Sore</h5>
+                    <p>Di sore hari, Anda akan mengunjungi Floating Market Lembang, di mana Anda bisa menikmati berbagai makanan lokal yang dijual di pasar terapung dan berjalan-jalan di sekitar danau.</p>
+                    <h5>Malam</h5>
+                    <p>>
+                        Malam hari, Anda akan makan malam di Kampung Daun, restoran dengan suasana alam yang menenangkan, lampu-lampu temaram, dan suara gemericik air yang menambah kenyamanan makan malam Anda.
+                        Setelah menikmati hidangan lezat di Kampung Daun, Anda akan kembali ke hotel untuk beristirahat dan mempersiapkan diri untuk hari terakhir di Bandung.</p>
+                    </div>
+                    <div class="tab-pane fade" id="bandung-day3" role="tabpanel" aria-labelledby="bandung-day3-tab">
+                        <h4>Belanja dan Jalan-jalan Santai</h4>
+                            <h5>Pagi</h5>
+                                <p>Pagi hari dimulai dengan sarapan di hotel dan dilanjutkan dengan proses check-out dari penginapan.
+                                    Setelah check-out, Anda akan berjalan-jalan di Jalan Braga, sebuah jalan bersejarah yang terkenal dengan suasana klasik dan banyak kafe-kafe yang unik.
+                                    Selanjutnya, Anda akan mengunjungi Museum Konferensi Asia-Afrika, sebuah tempat bersejarah di Bandung yang menyimpan banyak cerita penting dari Konferensi Asia-Afrika.</p>
+                            <h5>Siang</h5>
+                                <p>Waktunya untuk berbelanja oleh-oleh di Cihampelas Walk atau Rumah Mode Factory Outlet, tempat Anda bisa menemukan berbagai barang lokal seperti pakaian, aksesoris, dan oleh-oleh khas Bandung.
+                                    Makan siang di Braga Permai, sebuah restoran legendaris di kawasan Braga yang menyajikan berbagai hidangan lezat dengan suasana vintage yang khas.
+                                    Setelah makan siang, Anda akan memulai perjalanan kembali ke kota asal atau menuju bandara atau stasiun untuk pulang ke rumah.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- RajaAmpat Ampat Tab Content -->
+                <div class="tab-pane fade" id="RajaAmpat" role="tabpanel" aria-labelledby="RajaAmpat-tab">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3>3 Hari di Raja Ampat</h3>
+                        <button class="btn btn-outline-secondary btn-sm love-btn">
+                            <i class="ri-heart-line"></i>
+                        </button>
+                    </div>
+                    <ul class="nav nav-pills mb-3" id="RajaAmpatDayTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="RajaAmpat-day1-tab" data-bs-toggle="tab" data-bs-target="#RajaAmpat-day1" type="button" role="tab" aria-controls="RajaAmpat-day1" aria-selected="true">Day 1</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="RajaAmpat-day2-tab" data-bs-toggle="tab" data-bs-target="#RajaAmpat-day2" type="button" role="tab" aria-controls="RajaAmpat-day2" aria-selected="false">Day 2</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="RajaAmpat-day3-tab" data-bs-toggle="tab" data-bs-target="#RajaAmpat-day3" type="button" role="tab" aria-controls="RajaAmpat-day3" aria-selected="false">Day 3</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="RajaAmpatDayTabContent">
+                        <div class="tab-pane fade show active" id="RajaAmpat-day1" role="tabpanel" aria-labelledby="RajaAmpat-day1-tab">
+                            <h4>Kedatangan dan Wisata Pantai</h4>
+                        <h5>Pagi</h5>
+                        <p> Anda akan berangkat menuju Sorong. Jika Anda terbang dari Jakarta, perjalanan dengan pesawat akan memakan waktu sekitar 4 jam. Setibanya di Bandara Domine Eudard Osok Airport, Sorong, Anda akan dijemput dan menuju pelabuhan untuk transit ke RajaAmpat Ampat.
+                            Perjalanan dengan kapal akan memakan waktu sekitar 2-3 jam. Setibanya di RajaAmpat Ampat, Anda akan dijemput dan menuju Waisai Beach Hotel untuk check-in. Check-in di hotel atau villa untuk menaruh barang dan beristirahat sejenak.
+                            Setelah check-in, Anda bisa memulai liburan dengan berkunjung ke Pantai RajaAmpat Ampat. Anda bisa bersantai di tepi pantai atau mencoba olahraga air.</p>
+                        <h5>Siang</h5>
+                        <p> Makan siang di Engineering Coffee, yang menyediakan berbagai macam makanan Indonesia.
+                            Setelah makan siang, Anda dapat Mulai eksplorasi dengan mengunjungi Pulau Friwen untuk snorkeling dan menikmati pemandangan pantai.</p>
+                        <h5>Sore</h5>
+                        <p>Sore hari, Anda akan mengunjungi Pasir Timbul untuk menikmati pasir putih yang hanya muncul saat air surut.</p>
+                        <h5>Malam</h5>
+                        <p>Makan malam di Warung Pondok Lesehan, yang menyediakan berbagai macam makanan Indonesia.
+                            Setelah makan malam, Anda kembali ke Waisai Beach Hotel untuk istirahat dan bersantai.</p>
+                        </div>
+                        <div class="tab-pane fade" id="RajaAmpat-day2" role="tabpanel" aria-labelledby="RajaAmpat-day2-tab">
+                            <h4>Jelajah Pianeamo dan Tempat Ikonik</h4>
+                            <h5>Pagi</h5>
+                            <p>Sarapan di hotel untuk memulai hari dengan energi yang cukup.
+                                Berangkat pagi ke Pulau Pianemo. Naik ke puncak Pianemo untuk menikmati pemandangan spektakuler.
+                                Setelah itu, Anda akan melanjutkan perjalanan ke Jetty Sawandarek dan Arborek sekitar 1-2 jam dengan kapal cepat untuk snorkeling.
+                                Sawandarek terkenal dengan terumbu karangnya yang indah.</p>
+                            <h5>Siang</h5>
+                            <p>Makan siang di Makan siang di Desa Arborek sambil menikmati pemandangan dan berinteraksi dengan penduduk lokal.
+                                Setelah makan siang, Anda akan melanjutkan perjalanan ke Teluk Kabui sekitar 45 menit dengan speedboat.</p>
+                            <h5>Sore</h5>
+                            <p>Di sore hari, Anda akan mengunjungi Teluk Kabui, area dengan batu-batu karang besar dan pemandangan yang unik.
+                                Sore hari kembali ke hotel untuk menikmati sunset dan bersantai.</p>
+                            <h5>Malam</h5>
+                            <p>Kembali ke Waisai Beach Hotel untuk makan malam di Kedai Imajinazi. Setelah makan malam, kembali ke hotel untuk beristirahat.</p>
+                            </div>
+                        <div class="tab-pane fade" id="RajaAmpat-day3" role="tabpanel" aria-labelledby="RajaAmpat-day3-tab">
+                            <h4>Wisata Santai dan Kembali</h4>
+                                <h5>Pagi</h5>
+                                    <p>Nikmati pagi terakhir di Waisai Beach Hotel, bisa snorkeling di pantai sekitar hotel atau sekadar berjemur.
+                                        Check-out dari hotel dan menuju pelabuhan Waisai.</p>
+                                <h5>Siang</h5>
+                                    <p>Naik kapal cepat kembali ke Sorong.
+                                        Tiba di Sorong, bersiap menuju Bandara Domine Eduard Osok untuk penerbangan pulang.</p>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Yogyakarta Ampat Tab Content -->
+                <div class="tab-pane fade" id="Yogyakarta" role="tabpanel" aria-labelledby="Yogyakarta-tab">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3>3 Hari di Yogyakarta</h3>
+                        <button class="btn btn-outline-secondary btn-sm love-btn">
+                            <i class="ri-heart-line"></i>
+                        </button>
+                    </div>
+                    <ul class="nav nav-pills mb-3" id="YogyakartaDayTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="Yogyakarta-day1-tab" data-bs-toggle="tab" data-bs-target="#Yogyakarta-day1" type="button" role="tab" aria-controls="Yogyakarta-day1" aria-selected="true">Day 1</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Yogyakarta-day2-tab" data-bs-toggle="tab" data-bs-target="#Yogyakarta-day2" type="button" role="tab" aria-controls="Yogyakarta-day2" aria-selected="false">Day 2</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Yogyakarta-day3-tab" data-bs-toggle="tab" data-bs-target="#Yogyakarta-day3" type="button" role="tab" aria-controls="Yogyakarta-day3" aria-selected="false">Day 3</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="YogyakartaDayTabContent">
+                        <div class="tab-pane fade show active" id="Yogyakarta-day1" role="tabpanel" aria-labelledby="Yogyakarta-day1-tab">
+                            <h4> Kedatangan dan Wisata Budaya</h4>
+                            <h5>Pagi</h5>
+                            <p> Pukul 07.00 – 09.00: Anda akan memulai perjalanan menuju Yogyakarta. Jika berangkat dari Jakarta, perjalanan bisa ditempuh dengan pesawat atau kereta, memakan waktu sekitar 1-2 jam.
+                                Setibanya di Yogyakarta, Anda akan melakukan check-in di hotel atau penginapan yang terletak di kawasan Malioboro atau Prawirotaman.
+                                Setelah check-in, Anda akan mengunjungi Keraton Yogyakarta, tempat tinggal Sultan dan pusat kebudayaan Yogyakarta. Di sini, Anda dapat menyaksikan berbagai koleksi seni dan budaya.</p>
+                            <h5>Siang</h5>
+                            <p> Saatnya makan siang di Kedai Taman, yang terkenal dengan menu masakan Jawa yang lezat dan suasana yang nyaman.
+                                Setelah makan siang, Anda akan melanjutkan perjalanan ke Taman Sari, yang merupakan bekas taman kerajaan yang indah dan sarat sejarah.</p>
+                            <h5>Sore</h5>
+                            <p>Anda kemudian akan berkunjung ke Pasar Beringharjo, pasar tradisional yang menawarkan berbagai oleh-oleh dan kerajinan lokal. Anda bisa berbelanja batik dan cendera mata lainnya.</p>
+                            <h5>Malam</h5>
+                            <p>Saat sore tiba, Anda akan menikmati sunset di Tugu Yogyakarta, landmark terkenal di kota ini.
+                                Anda akan makan malam di Sega Merah, restoran yang menyajikan masakan khas Yogyakarta seperti nasi goreng kampung.
+                                Setelah makan malam, Anda akan kembali ke hotel untuk beristirahat dan mempersiapkan diri untuk hari kedua yang penuh petualangan.</p>
+                            </div>
+                        <div class="tab-pane fade" id="Yogyakarta-day2" role="tabpanel" aria-labelledby="Yogyakarta-day2-tab">
+                            <h4>Wisata Alam dan Sejarah</h4>
+                            <h5>Pagi</h5>
+                            <p>Pagi hari, Anda akan sarapan di hotel untuk mengisi energi sebelum memulai aktivitas.
+                                Anda akan berangkat menuju Candi Borobudur, salah satu candi terbesar dan terindah di dunia, yang terletak sekitar 1 jam dari Yogyakarta. Anda dapat menikmati keindahan arsitektur dan mengambil foto.
+                                Setelah itu, Anda akan mengunjungi Candi Mendut, candi yang tidak jauh dari Borobudur dan terkenal dengan patung Buddha-nya yang besar.</p>
+                            <h5>Siang</h5>
+                            <p>Waktu makan siang tiba, dan Anda akan menikmati hidangan lokal di sekitar Borobudur.
+                                Selanjutnya, Anda akan menuju Kaliurang untuk menikmati udara sejuk dan pemandangan Gunung Merapi.</p>
+                            <h5>Sore</h5>
+                            <p>Anda bisa berkunjung ke Museum Vulkanologi, yang memberikan informasi mengenai aktivitas vulkanik di Indonesia, khususnya tentang Gunung Merapi.</p>
+                            <h5>Malam</h5>
+                            <p>Setelah seharian berkeliling, Anda akan kembali ke Yogyakarta dan bersantai di Alun-Alun Kidul, di mana Anda dapat mencoba permainan tradisional seperti Sewa Sepeda Kayuh.
+                                Anda akan menikmati makan malam di Restoran Bumi Langit, yang menyajikan makanan organik dan sehat.
+                                Setelah makan malam, Anda bisa kembali ke hotel untuk beristirahat.</p>
+                        </div>
+                        <div class="tab-pane fade" id="Yogyakarta-day3" role="tabpanel" aria-labelledby="Yogyakarta-day3-tab">
+                            <h4>Wisata Belanja dan Kembali</h4>
+                                <h5>Pagi</h5>
+                                    <p>Pagi hari dimulai dengan sarapan di hotel dan melakukan check-out.
+                                        Anda akan berjalan-jalan di kawasan Malioboro, menikmati suasana pagi dan berbelanja oleh-oleh khas Yogyakarta seperti batik, kerajinan, dan makanan ringan.
+                                        Kunjungi Taman Pintar, wahana edukasi yang cocok untuk keluarga dan anak-anak, di mana Anda bisa belajar sambil bermain.
+                                        Anda akan mengunjungi Museum Affandi, museum seni yang memamerkan karya pelukis terkenal Indonesia, Affandi.</p>
+                                <h5>Sore</h5>
+                                    <p>Saat makan siang tiba, Anda akan menikmati hidangan di Roti Bakar 88 yang terkenal dengan roti bakar khasnya.
+                                        Setelah makan siang, Anda akan memiliki waktu luang untuk berbelanja atau menjelajahi kawasan sekitar sebelum perjalanan pulang.</p>
+                                <h5>Siang</h5>
+                                    <p>Anda akan menuju bandara atau stasiun untuk kembali ke kota asal.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Jakarta Ampat Tab Content -->
+                <div class="tab-pane fade" id="jakarta" role="tabpanel" aria-labelledby="jakarta-tab">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3>3 Hari di Jakarta</h3>
+                        <button class="btn btn-outline-secondary btn-sm love-btn">
+                            <i class="ri-heart-line"></i>
+                        </button>
+                    </div>
+                    <ul class="nav nav-pills mb-3" id="jakartaDayTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="jakarta-day1-tab" data-bs-toggle="tab" data-bs-target="#jakarta-day1" type="button" role="tab" aria-controls="jakarta-day1" aria-selected="true">Day 1</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="jakarta-day2-tab" data-bs-toggle="tab" data-bs-target="#jakarta-day2" type="button" role="tab" aria-controls="jakarta-day2" aria-selected="false">Day 2</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="jakarta-day3-tab" data-bs-toggle="tab" data-bs-target="#jakarta-day3" type="button" role="tab" aria-controls="jakarta-day3" aria-selected="false">Day 3</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="jakartaDayTabContent">
+                        <div class="tab-pane fade show active" id="jakarta-day1" role="tabpanel" aria-labelledby="jakarta-day1-tab">
+                            <h4>Kedatangan dan Eksplorasi Pusat Kota</h4>
+                            <h5>Pagi</h5>
+                            <p> Di pagi hari, Anda akan tiba di Jakarta melalui Bandara Soekarno-Hatta atau Stasiun Gambir.
+                                Setelah sampai, Anda akan menuju hotel di kawasan Menteng atau Thamrin untuk check-in dan
+                                meletakkan barang-barang. Setelah check-in, Anda bisa sarapan di Roti Bakar Eddy yang terkenal dengan roti bakar klasik dan suasana lokal.</p>
+                            <h5>Siang</h5>
+                            <p>Setelah sarapan, kunjungi Monumen Nasional (Monas), ikon Jakarta. Anda dapat menikmati
+                                pemandangan kota dari puncak Monas dan belajar sejarah kemerdekaan Indonesia. Setelahnya,
+                                Anda akan berjalan menuju Museum Nasional, yang memiliki koleksi artefak budaya dan sejarah
+                                Indonesia. Makan siang akan dinikmati di Beautika, restoran khas Manado yang terkenal dengan
+                                makanan pedasnya.</p>
+                            <h5>Sore</h5>
+                            <p>Sore hari, Anda bisa bersantai di Taman Suropati, sebuah taman di pusat kota yang sering
+                                digunakan sebagai tempat nongkrong warga lokal. Setelahnya, lanjutkan ke Plaza Indonesia atau
+                                Grand Indonesia untuk belanja atau sekadar menikmati kopi di salah satu kafe populer seperti
+                                Tanamera Coffee.</p>
+                            <h5>Malam</h5>
+                            <p>Untuk makan malam, Anda akan menikmati hidangan di SKYE Bar & Restaurant, restoran rooftop dengan pemandangan spektakuler kota Jakarta. Setelah makan malam, kembali ke hotel untuk beristirahat dan mempersiapkan diri untuk hari kedua di Jakarta.</p>
+                            </div>
+                        <div class="tab-pane fade" id="jakarta-day2" role="tabpanel" aria-labelledby="jakarta-day2-tab">
+                            <h4>Wisata Budaya dan Kuliner di Jakarta</h4>
+                            <h5>Pagi</h5>
+                            <p>Sarapan pagi di hotel atau di luar dengan mencoba Soto Betawi Haji Ma’ruf, salah satu tempat terbaik untuk mencicipi soto khas Jakarta. Setelah sarapan, Anda akan menuju kawasan Kota Tua Jakarta dan mengunjungi Museum Fatahillah. Anda bisa menjelajahi bangunan bersejarah dan belajar sejarah Jakarta dari zaman kolonial.</p>
+                            <h5>Siang</h5>
+                            <p>Makan siang akan dinikmati di Café Batavia, restoran ikonik dengan suasana kolonial. Setelah itu, Anda akan melanjutkan kunjungan ke Museum Wayang yang menampilkan berbagai koleksi wayang dari berbagai daerah di Indonesia.</p>
+                            <h5>Sore</h5>
+                            <p>Sore hari, Anda akan mengunjungi Pelabuhan Sunda Kelapa, pelabuhan bersejarah dengan pemandangan kapal phinisi yang unik. Dari sana, lanjutkan perjalanan ke Glodok, kawasan Chinatown Jakarta, di mana Anda bisa mencicipi kuliner lokal seperti bakmi dan menjelajahi pasar tradisional.</p>
+                            <h5>Malam</h5>
+                            <p>Untuk makan malam, Anda akan menuju Bandar Djakarta di Ancol. Restoran ini menawarkan seafood segar yang bisa Anda pilih langsung. Setelah makan malam, Anda dapat berjalan-jalan di tepi pantai Ancol sebelum kembali ke hotel untuk istirahat.</p>
+                        </div>
+                        <div class="tab-pane fade" id="jakarta-day3" role="tabpanel" aria-labelledby="jakarta-day3-tab">
+                            <h4>Wisata Belanja dan Kembali</h4>
+                                <h5>Pagi</h5>
+                                    <p>Setelah check-out dari hotel, Anda akan sarapan di Nasi Uduk Kebon Kacang, yang terkenal dengan nasi gurihnya. Setelah sarapan, Anda akan menuju Taman Mini Indonesia Indah (TMII) untuk melihat berbagai rumah adat dari seluruh Indonesia dan belajar tentang kekayaan budaya nusantara. Anda juga bisa menikmati pemandangan TMII dari kereta gantung.</p>
+                                <h5>Siang</h5>
+                                    <p>Makan siang di kawasan Cilandak atau di Warung Makan Sederhana, restoran Padang yang terkenal dengan lauk-lauk seperti rendang dan ayam pop. Setelah makan siang, Anda bisa berbelanja oleh-oleh di Pasaraya Blok M atau Pasar Seni Ancol.</p>
+                                <h5>Sore</h5>
+                                    <p>Sore hari akan dihabiskan di Senayan City atau Pacific Place untuk berbelanja dan bersantai sebelum perjalanan pulang. Anda bisa menikmati kafe atau membeli barang-barang fashion sebelum menuju bandara atau stasiun.</p>
+                                <h5>Malam</h5>
+                                    <p>Anda akan menuju Bandara Soekarno-Hatta atau Stasiun Gambir untuk kembali ke kota asal, menutup perjalanan 3 hari 2 malam di Jakarta.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Bagian add your itinerary -->
+       <section id="create-itinerary">
+      <div class="container mt-5">
+        <h1>Create Your Itinerary</h1>
+        <p>Select Your Destination:</p>
+        <ul class="nav nav-tabs" id="destinationTabs" role="tablist" style="border: none;">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="add-bali-tab" data-bs-toggle="tab" data-bs-target="#add-bali" type="button" role="tab">Bali</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="add-bandung-tab" data-bs-toggle="tab" data-bs-target="#add-bandung" type="button" role="tab">Bandung</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="add-rajaAmpat-tab" data-bs-toggle="tab" data-bs-target="#add-rajaAmpat" type="button" role="tab">Raja Ampat</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="add-yogyakarta-tab" data-bs-toggle="tab" data-bs-target="#add-yogyakarta" type="button" role="tab">Yogyakarta</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="add-jakarta-tab" data-bs-toggle="tab" data-bs-target="#add-jakarta" type="button" role="tab">Jakarta</button>
+          </li>
+        </ul>
+    
+        <div class="tab-content mt-4" id="destinationTabsContent">
+            <!-- Bali -->
+            <div class="add tab-pane fade show active" id="add-bali" role="tabpanel">
+              <div id="itinerary">
+                <ul class="nav nav-tabs mb-3" id="add-dayTabs-bali" role="tablist" style="border: none;">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="add-day1-bali-tab" data-bs-toggle="tab" data-bs-target="#add-day1-bali" type="button" role="tab">Day 1</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-primary" id="addDayButtonBali" type="button">+</button>
+                  </li>
+                </ul>
+          
+                <div class="tab-content" id="dayTabsContent-bali" style="border: none;">
+                  <div class="add tab-pane fade show active" id="add-day1-bali" role="tabpanel">
+                    <div class="day-content">
+                      <h5>Pagi</h5>
+                      <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                      <h5>Siang</h5>
+                      <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                      <h5>Sore</h5>
+                      <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                      <h5>Malam</h5>
+                      <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Bandung -->
+            <div class="add tab-pane fade" id="add-bandung" role="tabpanel">
+              <div id="itinerary">
+                <ul class="nav nav-tabs mb-3" id="add-dayTabs-bandung" role="tablist" style="border: none;">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="add-day1-bandung-tab" data-bs-toggle="tab" data-bs-target="#add-day1-bandung" type="button" role="tab">Day 1</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-primary" id="addDayButtonBandung" type="button">+</button>
+                  </li>
+                </ul>
+          
+                <div class="tab-content" id="dayTabsContent-bandung" style="border: none;">
+                  <div class="add tab-pane fade show active" id="add-day1-bandung" role="tabpanel">
+                    <div class="day-content">
+                      <h5>Pagi</h5>
+                      <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                      <h5>Siang</h5>
+                      <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                      <h5>Sore</h5>
+                      <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                      <h5>Malam</h5>
+                      <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Raja Ampat -->
+            <div class="add tab-pane fade" id="add-rajaAmpat" role="tabpanel">
+              <div id="itinerary">
+                <ul class="nav nav-tabs mb-3" id="add-dayTabs-rajaAmpat" role="tablist" style="border: none;">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="add-day1-rajaAmpat-tab" data-bs-toggle="tab" data-bs-target="#add-day1-rajaAmpat" type="button" role="tab">Day 1</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-primary" id="addDayButtonrajaAmpat" type="button">+</button>
+                  </li>
+                </ul>
+          
+                <div class="tab-content" id="dayTabsContent-rajaAmpat" style="border: none;">
+                  <div class="add tab-pane fade show active" id="add-day1-rajaAmpat" role="tabpanel">
+                    <div class="day-content">
+                      <h5>Pagi</h5>
+                      <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                      <h5>Siang</h5>
+                      <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                      <h5>Sore</h5>
+                      <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                      <h5>Malam</h5>
+                      <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- yogyakarta -->
+            <div class="add tab-pane fade" id="add-yogyakarta" role="tabpanel">
+                <div id="itinerary">
+                  <ul class="nav nav-tabs mb-3" id="add-dayTabs-yogyakarta" role="tablist" style="border: none;">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="add-day1-yogyakarta-tab" data-bs-toggle="tab" data-bs-target="#add-day1-yogyakarta" type="button" role="tab">Day 1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="btn btn-outline-primary" id="addDayButtonyogyakarta" type="button">+</button>
+                    </li>
+                  </ul>
+            
+                  <div class="tab-content" id="dayTabsContent-yogyakarta" style="border: none;">
+                    <div class="add tab-pane fade show active" id="add-day1-yogyakarta" role="tabpanel">
+                      <div class="day-content">
+                        <h5>Pagi</h5>
+                        <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                        <h5>Siang</h5>
+                        <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                        <h5>Sore</h5>
+                        <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                        <h5>Malam</h5>
+                        <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <!-- Yogyakarta -->
+            <div class="add tab-pane fade" id="add-jakarta" role="tabpanel">
+              <div id="itinerary">
+                <ul class="nav nav-tabs mb-3" id="add-dayTabs-jakarta" role="tablist" style="border: none;">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="add-day1-jakarta-tab" data-bs-toggle="tab" data-bs-target="#add-day1-jakarta" type="button" role="tab">Day 1</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-primary" id="addDayButtonjakarta" type="button">+</button>
+                  </li>
+                </ul>
+          
+                <div class="tab-content" id="dayTabsContent-jakarta" style="border: none;">
+                  <div class="add tab-pane fade show active" id="add-day1-jakarta" role="tabpanel">
+                    <div class="day-content">
+                      <h5>Pagi</h5>
+                      <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                      <h5>Siang</h5>
+                      <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                      <h5>Sore</h5>
+                      <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                      <h5>Malam</h5>
+                      <textarea class="form-control" placeholder="Add your activity in here ..."></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <!-- Save Button -->
+  <div class="text-end">
+    <button class="btn px-4 py-2 fw-bold" style="background-color:#FFDDAE;">Save</button>
+  </div>
+          </div>          
+      </div>
+    </section>
+
+    <!-- Footer Section Starts Here -->
+     <section class="footer">
+<footer class=" mt-5 bg-lightblue py-5">
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <!-- Company Details -->
+        <div class="col-md-6">
+          <h3 class="fw-bold">LuxeVoyage</h3>
+          <p class="mb-4">
+            Travel with us and explore <br />
+            the world without limits.
+          </p>
+          <h5 class="fw-bold">Get in touch</h5>
+          <a href="mailto:luxevoyage@mail.com" class="text-decoration-none">luxevoyage@mail.com</a>
+          <div class="social mt-3">
+            <a href="#" class="text-dark me-3"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="#" class="text-dark me-3"><i class="ri-facebook-box-fill"></i></a>
+            <a href="#" class="text-dark"><i class="ri-twitter-x-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4" />
+      <!-- Copyright and Links -->
+      <div class="d-md-flex justify-content-between">
+        <div class="text-muted">
+          &copy;2024 - LuxeVoyage, inc, all rights reserved
+        </div>
+        <div>
+          <a href="#" class="text-decoration-none me-3">Term & Conditions</a>
+          <a href="#" class="text-decoration-none">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </section>
+  <!-- Footer Section Ends Here -->
+  
+      <!-- Bootstrap  -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- JS  -->
+      <script src="/app/index.js"></script>
+</body>
+</html>
