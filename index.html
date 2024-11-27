@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="LuxeVoyageApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuxeVoyage</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- AngularJS -->
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body ng-controller="MainController">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">LuxeVoyage</a>
+      <div class="mx-auto">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Destinasi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Itinerary</a>
+          </li>
+        </ul>
+      </div>
+      <a class="btn btn-outline-light ms-3" href="#">Login</a>
+    </div>
+  </nav>
+  
+
+  <!-- Recommended Destination Section -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Recommended Destination</h2>
+    <div class="row g-4">
+      <!-- Card -->
+      <div class="col-md-4" ng-repeat="destination in destinations">
+        <div class="card">
+          <img ng-src="{{destination.image}}" class="card-img-top" alt="Destination Image">
+          <div class="card-body">
+            <h5 class="card-title">{{destination.title}}</h5>
+            <p class="card-text">{{destination.description}}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="#" class="btn btn-outline-primary">Details</a>
+              <i class="favorite-icon" ng-class="{'active': destination.favorite}" 
+                 ng-click="toggleFavorite(destination)">&#9829;</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AngularJS -->
+  <script src="app.js"></script>
+</body>
+</html>
