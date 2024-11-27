@@ -113,11 +113,11 @@ const blurHeader = () => {
     const header = document.getElementById("header");
     const scrollValue = window.scrollY;
   
-    if (scrollValue >= 90) {
+    if (scrollValue >= 600) {
       const blurValue = Math.min(scrollValue / 10, 30);
       header.style.backdropFilter = `blur(${blurValue}px)`;
       header.style.webkitBackdropFilter = `blur(${blurValue}px)`;
-      header.style.backgroundColor = `rgba(128, 128, 128, 0.3)`;
+      header.style.backgroundColor = `rgba(28, 128, 128, 0.3)`;
     } else {
       header.style.backdropFilter = 'blur(0px)';
       header.style.webkitBackdropFilter = 'blur(0px)';
