@@ -17,36 +17,29 @@
   </head>
   <body>
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg" style="background-color: #16325B; ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="app/img/logo.png"
-            alt="Logo"
-            width="30"
-            height="30"
-            class="d-inline-block align-text-top"
-          />
-          LuxeVoyage
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <a class="navbar-brand mx-auto" style="color: white;" href="#">LuxeVoyage</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Destinasi</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Itenary</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="#">Destinasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="#">Itinerary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  style="color: white;" href="#">Contact Us</a>
+            </li>
           </ul>
+          <a class="navbar-brand" href="/app/view/profil.html"><button type="button" class="btn btn-primary">Profil</button>
+          </a>
         </div>
       </div>
     </nav>
@@ -93,9 +86,40 @@
 </div>
 
 <!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-  <p>&copy; 2024 Your Company. All Rights Reserved.</p>
-</footer>
+<section class="footer" style="background-color: #16325B;">
+  <footer class=" mt-5 py-5">
+      <div class="container text-center text-md-start">
+        <div class="row">
+          <!-- Company Details -->
+          <div class="col-md-6">
+            <h3 class="fw-bold">LuxeVoyage</h3>
+            <p class="mb-4">
+              Travel with us and explore <br />
+              the world without limits.
+            </p>
+            <h5 class="fw-bold">Get in touch</h5>
+            <a href="mailto:luxevoyage@mail.com" class="text-decoration-none" style="color: white;">luxevoyage@mail.com</a>
+            <div class="social mt-3" >
+              <a href="#" class="text-white me-3" ><i class="ri-linkedin-box-fill"></i></a>
+              <a href="#" class="text-white me-3"><i class="ri-facebook-box-fill"></i></a>
+              <a href="#" class="text-white"><i class="ri-twitter-x-fill"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <!-- Copyright and Links -->
+        <div class="d-md-flex justify-content-between">
+          <div>
+            &copy;2024 - LuxeVoyage, inc, all rights reserved
+          </div>
+          <div>
+            <a href="#" class="text-decoration-none me-3" style="color: white;">Term & Conditions</a>
+            <a href="#" class="text-decoration-none" style="color: white;">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </section>
 
     <!-- Modul utama AngularJS -->
     <script src="app/js/app.js"></script>
