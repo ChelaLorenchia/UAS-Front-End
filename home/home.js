@@ -127,29 +127,29 @@ const blurHeader = () => {
 window.addEventListener("scroll", blurHeader);
 
 /* GARIS BAWAH PADA NAVBAR */
-const navLinks = document.querySelectorAll('nav ul li a');
+// const navLinks = document.querySelectorAll('nav ul li a');
 
-const sections = document.querySelectorAll('section');
+// const sections = document.querySelectorAll('section');
 
-const highlightNavbar = () => {
-  let scrollPos = window.scrollY + 50;
+// const highlightNavbar = () => {
+//   let scrollPos = window.scrollY + 50;
 
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.offsetHeight;
+//   sections.forEach(section => {
+//     const sectionTop = section.offsetTop;
+//     const sectionHeight = section.offsetHeight;
 
-    if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
-      const currentId = section.getAttribute('id');
+//     if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+//       const currentId = section.getAttribute('id');
 
-      navLinks.forEach(link => link.classList.remove('active'));
+//       navLinks.forEach(link => link.classList.remove('active'));
 
-      const activeLink = document.querySelector(`nav ul li a[href="#${currentId}"]`);
-      if (activeLink) {
-        activeLink.classList.add('active');
-      }
-    }
-  });
-};
+//       const activeLink = document.querySelector(`nav ul li a[href="#${currentId}"]`);
+//       if (activeLink) {
+//         activeLink.classList.add('active');
+//       }
+//     }
+//   });
+// };
 
 window.addEventListener('scroll', highlightNavbar);
 
