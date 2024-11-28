@@ -1,7 +1,7 @@
-app.controller("baliController", function ($scope, baliService) {
-  // nama "wisataControllernya harus sama dengan bali.html di ng-controler agar data dari services dapat dilihat di bali.html"
+app.controller("contactUsController", function ($scope, contactUsService) {
+  // nama "wisataControllernya harus sama dengan contactUs.html di ng-controler agar data dari services dapat dilihat di contactUs.html"
   // Mengambil data slide dari service
-  $scope.slides = baliService.getSlides();
+  $scope.slides = contactUsService.getSlides();
 
   console.log($scope.slides); // Debug untuk memastikan data sudah benar
 
@@ -25,17 +25,17 @@ app.controller("baliController", function ($scope, baliService) {
   };
 
   // Mengambil data aktivitas untuk Day 1
-  $scope.day1 = baliService.getDay1BaliActivities();
+  $scope.day1 = contactUsService.getDay1contactUsActivities();
   // Mengambil data aktivitas untuk Day 2
-  $scope.day2 = baliService.getDay2BaliActivities();
+  $scope.day2 = contactUsService.getDay2contactUsActivities();
   // Mengambil data aktivitas untuk Day 3
-  $scope.day3 = baliService.getDay3BaliActivities();
+  $scope.day3 = contactUsService.getDay3contactUsActivities();
   // mengambi data wisata pada card
-  $scope.wisataList1 = baliService.getWisataDay1();
-  $scope.wisataList2 = baliService.getWisataDay2();
-  $scope.wisataList3 = baliService.getWisataDay3();
+  $scope.wisataList1 = contactUsService.getWisataDay1();
+  $scope.wisataList2 = contactUsService.getWisataDay2();
+  $scope.wisataList3 = contactUsService.getWisataDay3();
   
-  // $scope.rekomendasiWisata = baliService.getRekomendasiWisata();
+  // $scope.rekomendasiWisata = contactUsService.getRekomendasiWisata();
 
 
 });
