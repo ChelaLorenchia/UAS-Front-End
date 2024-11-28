@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="LuxeVoyage">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+        <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app/js/wisataService.js"></script>
+    <!-- Service untuk mendapatkan data -->
+    <script src="app/js/baliController.js"></script>
+    <!-- Controller untuk Bali -->
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #16325B; ">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-auto" style="color: white;" href="#">LuxeVoyage</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="#">Destinasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;" href="#">Itinerary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  style="color: white;" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <a class="navbar-brand" href="/app/view/profil.html"><button type="button" class="btn btn-primary">Profil</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+    
+  <!-- Main Content -->
+  <div class="container my-5">
+    <div class="row g-4">
+        <!-- Contact Form -->
+        <div class="col-md-6">
+            <h3>Send Us a Message</h3>
+            <form>
+              <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+              </div>
+              <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-6">
+          <h3>Contact Information</h3>
+          <ul class="list-unstyled">
+              <li><strong>Address:</strong> 123 Main Street, Jakarta</li>
+              <li><strong>Phone:</strong> +62 123-4567-8901</li>
+              <li><strong>Email:</strong> admin@example.com</li>
+          </ul>
+          <h4>Follow Us</h4>
+          <div>
+              <a href="#" class="btn btn-outline-primary btn-sm me-2">Facebook</a>
+              <a href="#" class="btn btn-outline-primary btn-sm me-2">Instagram</a>
+              <a href="#" class="btn btn-outline-primary btn-sm">Twitter</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<section class="footer" style="background-color: #16325B;">
+  <footer class=" mt-5 py-5">
+      <div class="container text-center text-md-start">
+        <div class="row">
+          <!-- Company Details -->
+          <div class="col-md-6">
+            <h3 class="fw-bold">LuxeVoyage</h3>
+            <p class="mb-4">
+              Travel with us and explore <br />
+              the world without limits.
+            </p>
+            <h5 class="fw-bold">Get in touch</h5>
+            <a href="mailto:luxevoyage@mail.com" class="text-decoration-none" style="color: white;">luxevoyage@mail.com</a>
+            <div class="social mt-3" >
+              <a href="#" class="text-white me-3" ><i class="ri-linkedin-box-fill"></i></a>
+              <a href="#" class="text-white me-3"><i class="ri-facebook-box-fill"></i></a>
+              <a href="#" class="text-white"><i class="ri-twitter-x-fill"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <!-- Copyright and Links -->
+        <div class="d-md-flex justify-content-between">
+          <div>
+            &copy;2024 - LuxeVoyage, inc, all rights reserved
+          </div>
+          <div>
+            <a href="#" class="text-decoration-none me-3" style="color: white;">Term & Conditions</a>
+            <a href="#" class="text-decoration-none" style="color: white;">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </section>
+
+    <!-- Modul utama AngularJS -->
+    <script src="app/js/app.js"></script>
+    <script src="js/contactUs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    
+  </body>
+</html>
