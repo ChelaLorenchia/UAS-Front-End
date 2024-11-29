@@ -69,7 +69,7 @@ app.controller("MainController", function ($scope) {
   // Open Modal
   $scope.openModal = function () {
     $scope.isModalOpen = true;
-    $scope.isLoginForm = true; // Default to login form
+    $scope.isLoginForm = true;
     $scope.modalTitle = "Login";
   };
 
@@ -89,7 +89,6 @@ app.controller("MainController", function ($scope) {
   // Login function
   $scope.login = function () {
     console.log("Login data submitted:", $scope.loginData);
-    // Add logic to process login here
     alert("Login successful (dummy)");
     $scope.closeModal();
   };
@@ -97,7 +96,6 @@ app.controller("MainController", function ($scope) {
   // Register function
   $scope.register = function () {
     console.log("Register data submitted:", $scope.registerData);
-    // Add logic to process registration here
     alert("Registration successful (dummy)");
     $scope.closeModal();
   };
